@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<html lang="ru">
+    <head>
+        <title>Retake HSE</title>
+		<meta charset="UTF-8">
+		<meta name="description" content= "Страница с заданием API" />
+		<meta http-equiv="author" content= "Егупова А.О. МЖД-162" />
+		<meta http-equiv="pragma" content= "no-cache" />
+		<style type="text/css">		
+		    h1   {
+                font-family: impact;
+	            color: #6a899d;}
+			
+            #map {
+                height: 130%;}		
+				
+            html, body {
+			    font-family: impact;
+			    background-color: #f5f5f5;
+                height: 70%;
+                margin: 50px 40px 150px;
+                padding: 0;}
+
+            a.tomain {
+                display: inline-block;
+                color: #727171;
+                font-weight: 700;
+                text-decoration: none;
+                user-select: none;
+                padding: .5em 2em;
+                outline: none;
+                border: 2px solid;
+                border-radius: 1px;
+                transition: 0.2s;
+				font-family: calibri regular;}
+				
+            a.tomain:hover { 
+                background: #5b87a4;
+                color: #ffffff;}
+            a.tomain:active { 
+                background: #575757;}
+				
+        </style>	
+    	
+    </head>
+	
+    <body>
+
+		<h1>GOOGLE MAPS API</h1>
+		
+        <div id="map"></div>
+		
+		<br />
+		<hr />
+		<br />
+    <script>
+      function initMap() {
+
+        // Создание нового объекта StyledMapType, передача ему массива стилей и имени, 
+		//которое будет отображаться в элементе управления типом карты.
+        var styledMapType = new google.maps.StyledMapType(
+            [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f5f5f5"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#f5f5f5"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#bdbdbd"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#eeeeee"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e5e5e5"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#ffffff"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dadada"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e5e5e5"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#eeeeee"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#c9c9c9"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  }
+],
+        {name: 'Карта с дополнительным стилем'});
+
+        // Параметры создания карты 		
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 55.75357827, lng: 37.64483787},
+          zoom: 17,
+          mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'styled_map']
+          }
+        });
+		
+        //Связь стилизованной карты с MapTypeId для ее отображения
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+		
+		//Установка маркера
+		var marker = new google.maps.Marker({
+          position: {lat: 55.75357827, lng: 37.64483787},
+          map: map,
+		  title: 'ВШЭ факультет коммуникаций, медиа и дизайна'
+        });
+      }
+	  
+        </script>
+
+		<center><a href="Index.html" class="tomain">НА ГЛАВНУЮ</a></center>
+		
+		<!--Подключение API-->
+		<!--API key AIzaSyDrXE2yhzPaJD3g5wUQKNOJz3yvmVI5tiA-->	
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrXE2yhzPaJD3g5wUQKNOJz3yvmVI5tiA&callback=initMap"async defer></script>	
+        
+	</body>
+
+</html>

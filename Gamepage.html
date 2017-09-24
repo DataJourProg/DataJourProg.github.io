@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Retake HSE</title>
+		<meta name="description" content= "Страница с игрой, созданной при помощи JavaScript" />
+		<meta name="robots" content= "noindex" />
+		<meta http-equiv="author" content= "Егупова А.О. МЖД-162" />
+		<meta http-equiv="pragma" content= "no-cache" />
+		<script src="game.js" defer></script>
+		<script type="text/javascript">
+            function reloadPage()
+            {
+            window.location.reload()
+            }
+        </script>
+		<style type="text/css">
+		 body {
+             font-family: century gothic regular;
+	         background-image: url("Images/backgroundapi.jpg");
+	         background-size: cover;
+			 background-position: absolute;}
+			 
+		#game {
+		    width: 300px;
+			height: 300px;
+			margin: 10px auto;}
+		.block {
+		    width: 100px;
+			height: 100px;
+			float: left;
+			border: 1px solid #666;
+			box-sizing: border-box;
+			text-align: center;
+			font-size: 100px;
+			font-weight: bold;
+			line-height: 100px;}
+			 
+		a.tomain {
+             display: inline-block;
+             color: #575757;
+             font-weight: 700;
+             text-decoration: none;
+             user-select: none;
+             padding: .5em 2em;
+             margin: 70px;
+             outline: none;
+             border: 2px solid;
+             border-radius: 1px;
+             transition: 0.2s;} 	 
+        a.tomain:hover { 
+             background: #575757;
+             color: #ffffff;}
+        a.tomain:active { 
+             background: #575757;}
+			 
+		a.newgame {
+             display: inline-block;
+             color: #575757;
+             font-weight: 700;
+             text-decoration: none;
+             user-select: none;
+             padding: .5em 2em;
+             margin: 70px;
+             outline: none;
+             border: 2px solid;
+             border-radius: 1px;
+             transition: 0.2s;} 	 
+        a.newgame:hover { 
+             background: #575757;
+             color: #ffffff;}
+        a.newgame:active { 
+             background: #575757;}
+        </style>		
+    </head>
+	
+    <body>
+	
+	    <center><a href="Index.html" class="tomain">НА ГЛАВНУЮ</a></center>
+		<center><input type="button" value="НОВАЯ ИГРА" onclick="reloadPage()"/></center>
+		<div id="game"></div>
+		
+	</body>
+
+</html>

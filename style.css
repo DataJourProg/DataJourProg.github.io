@@ -1,0 +1,134 @@
+body {
+    font-family: calibri regular;
+	margin: 0;}
+	
+section {
+	background-color: #ffffff;
+    position: relative;
+	overflow: hidden;}
+	
+.firstblock {
+	height: 100vh;
+    background-image: url("Images/backgroundfin.jpg");
+	background-size: cover;
+	overflow: hidden;}
+	
+img.mainframe {
+	margin: 130px auto 0px 190px;
+	width: 900px; 
+	height: 600px;
+	z-index: 100;
+	position: absolute;}	
+
+img.retake {
+    margin: 340px auto 0px 390px;
+	width: 500px; 
+	height: 200px;
+	z-index: 10;
+	position: absolute;}
+	
+	
+	
+.secondblock {
+	height: 60vh;
+	position: relative;
+	width: 100%;}
+.thirdblock {
+	height: 40vh;
+	background-image: url("Images/bottoms.jpg");
+	background-size: cover;}
+	
+	
+h1   {
+    font-family: impact;
+	color: #555555;
+	text-shadow: 9px 12px 3px #afafaf;}
+fieldset {
+	border: 15px solid #678191;}
+	
+.List {
+    margin-top:50px;
+	font-size:20px;
+	font-weight: bold;
+	color: #515151;
+	background-color: #ffffff;
+	padding: 50px 30%;}
+
+.bottoms {
+    margin: 150px;}
+	
+a.toapi {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  margin: 0px 10px;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+} 
+a.toapi:hover { 
+    background: #5b87a4;
+    color: #ffffff;}
+a.toapi:active { 
+    background: #575757;}
+
+a.toplotly {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  margin: 0px 10px;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+} 
+a.toplotly:hover { 
+    background: #5b87a4;
+    color: #ffffff;}
+a.toplotly:active { 
+    background: #575757;}
+
+a.tod3js {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  margin: 0px 10px;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+} 
+a.tod3js:hover { 
+    background: #5b87a4;
+    color: #ffffff;}
+a.tod3js:active { 
+    background: #575757;}
+
+a.togame {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  margin: 0px 10px;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+} 
+a.togame:hover { 
+    background: #5b87a4;
+    color: #ffffff;}}
+a.togame:active { 
+    background: #575757;}
